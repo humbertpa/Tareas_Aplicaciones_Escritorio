@@ -1,0 +1,113 @@
+@import "variables";
+
+nav{
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $color-nav;
+  }
+  li {
+    float: right;
+    order: initial;
+  }
+
+}
+
+li{
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: #111;
+  }
+
+}
+
+  body{
+    background-color: $color-fondo;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+.carta {
+    background-color: $color-tarjeta;
+    width: 60%;
+    height: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 50px;
+  }
+
+  section{
+    width: 100%;
+  }
+
+  section > div{
+    display: inline;
+    width: 50%;
+    height: max-content;
+    float: left;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: max-content;
+  }
+
+
+  .row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+  }
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+
+  img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+  @mixin columna_gal($proporcion) {
+    -ms-flex: $proporcion;
+    flex: $proporcion;
+    max-width: $proporcion;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    section div{
+      width: 100%;
+      height: max-content;
+      box-sizing: border-box;
+  }
+  /* Convierte de cuatro a dos columnas cuando disminuye la pantalla*/
+  .column {
+      @include columna_gal(48%)
+    }
+  }
+  
+  /* Hace que dos columnas se apilen en vez de estar una a lado de la otra*/
+  @media screen and (max-width: 600px) {
+    .column {
+      @include columna_gal(100%)
+    }
+  }

@@ -1,0 +1,122 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+nav li {
+  float: right;
+  order: initial;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: #111;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.menu li {
+  
+  order: initial;
+}
+
+.menu li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background-color: #111;
+  color: white;
+}
+body {
+  background-color: beige;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.carta {
+  background-color: white;
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+section {
+  width: 100%;
+}
+
+section > div {
+  display: inline;
+  width: 50%;
+  height: max-content;
+  float: left;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: max-content;
+}
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+}
+
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  section div {
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;
+  }
+  /* Convierte de cuatro a dos columnas cuando disminuye la pantalla*/
+  .column {
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 48%;
+  }
+}
+/* Hace que dos columnas se apilen en vez de estar una a lado de la otra*/
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
