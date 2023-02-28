@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon .",
+<<<<<<< HEAD
     "start": "node ."
+=======
+    "start" : "node ."
+>>>>>>> c3fe3ced7b5dc18cc09522f4f8764454015ab914
   },
   "author": "",
   "license": "ISC",
