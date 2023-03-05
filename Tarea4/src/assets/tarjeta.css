@@ -1,7 +1,12 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
     transition: 0.3s;
-    width: 40%;
+    width: 20%;
+    height: 70%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float: left;
   }
   
   .card:hover {
@@ -10,4 +15,5 @@
   
   .container {
     padding: 2px 16px;
+    
   }

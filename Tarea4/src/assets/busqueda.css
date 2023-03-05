@@ -1,5 +1,12 @@
-.navbar {
+body{
+    background-color: #EFEAE2;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+nav {
     background-color: black;
-    height: 50px;
-    padding: 5px;
+    color: black;
+    height: min-content;
+    padding: 10px;
 }
