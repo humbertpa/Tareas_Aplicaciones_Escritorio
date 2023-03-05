@@ -1,0 +1,7 @@
+@API_KEY = 037aefc8a7db41d3a7572673160ba954
+@key_word = paletas
+###
+GET https://newsapi.org/v2/everything?q={{key_word}}&apiKey={{API_KEY}}
+
+###
+GET https://newsapi.org/v2/top-headlines?country=us&apiKey={{API_KEY}}
