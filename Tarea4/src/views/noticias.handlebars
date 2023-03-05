@@ -13,11 +13,12 @@
 <body>
 
     <nav>
-        <div class="input-group">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                aria-describedby="search-addon" />
-            <button type="button" class="btn btn-outline-primary">search</button>
-        </div>
+        <form action="/noticias" method="get">
+            <div class="input-group">
+                <input type="search" name="clave" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <input type="submit" value="Buscar">
+            </div>
+        </form>
     </nav>
 
 

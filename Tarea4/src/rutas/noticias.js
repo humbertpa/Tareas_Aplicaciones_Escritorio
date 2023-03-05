@@ -7,16 +7,11 @@ require('dotenv').config();
 const api_key = process.env.NEWSAPI_KEY;
 
 router.get('', async (req, res) => {
-    //const url = 'https://newsapi.org/v2/everything?q='+req.body+ api_key;
+    console.log(req.query.clave);
 
-    const url = 'https://newsapi.org/v2/everything?q=baking&apiKey=' + api_key;
-    console.log(url);
+    const url = 'https://newsapi.org/v2/everything?q=' + req.query.clave + '&apiKey=' + api_key;
     const response = await fetch(url);
     const json = await response.json();
-    //console.log(Object.keys(json));
-    //console.log(json); //archivo completo
-    //console.log(json.articles); //solo los artículos
-    console.log(Object.keys(json.articles[0]));
     let contenido = json.articles.map((element) => {
 
         let html = `
