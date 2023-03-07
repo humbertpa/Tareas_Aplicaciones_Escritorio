@@ -1,0 +1,12 @@
+body{
+    background-color: #EFEAE2;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+nav {
+    background-color: black;
+    color: black;
+    height: min-content;
+    padding: 10px;
+}
