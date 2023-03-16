@@ -18,19 +18,13 @@ rutas(app);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 const mongoose = require('mongoose');
-const mongoUrl = process.env.MONGO_URL;
+const username = 'usuario_tarea5';      /// actualizar username
+const password = 'usuario_tarea5';      /// actualizar password
+
+
+const mongoUrl = 'mongodb+srv://'+username+':'+password+'@clusterescritorio.rn2dgpb.mongodb.net/?retryWrites=true&w=majority'
+
 console.log(mongoUrl);
 
 mongoose.connect(mongoUrl).then(() => {

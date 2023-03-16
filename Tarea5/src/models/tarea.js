@@ -4,7 +4,7 @@ const tareaSchema= new Schema({
     descripcion: {type: String},
     status:{type: String, default: 'new'},
     creacion:{type: String}
-}); //objeto que genero
+});
 
 
 module.exports= model('tareas', tareaSchema);
