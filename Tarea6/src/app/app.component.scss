@@ -1,0 +1,19 @@
+.panels,
+app-header,
+app-footer {
+    margin: 0%;
+}
+
+.panels {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+app-sidenav {
+    width: max-content;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
