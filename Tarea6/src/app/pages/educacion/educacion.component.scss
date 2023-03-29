@@ -1,0 +1,53 @@
+$margen: 5%;
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carta {
+
+    height: calc(100% - #{$margen});
+    width: 70%;
+    margin-top: $margen/2;
+
+    background-color: #FFFFF8;
+
+    border-color: #c2edce;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #6fb3b8;
+    font-family: Arial,
+        sans-serif;
+    text-align: center;
+}
+
+li {
+    color: #6fb3b8;
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial,
+        sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+}
+
+li {
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial,
+        sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #388087;
+}
