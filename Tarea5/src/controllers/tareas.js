@@ -4,7 +4,9 @@ class controladorTareas {
 
 
     static listar(req, res) {
-        Tarea.find({}).lean.then(tareas => {
+        Tarea.find({
+            userId: req.usuario._id
+        }).lean.then(tareas => {
             res.render('tareas', { tareas })
         })
             .catch(err => {
