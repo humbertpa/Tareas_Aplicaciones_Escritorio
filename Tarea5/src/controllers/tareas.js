@@ -35,22 +35,22 @@ class controladorTareas {
     }
 
     static editar(req, res) {
-        Tarea.findByIdAndUpdate(req.params.id, newData, {new:true})
-        .then(tareaEditada=>{
-            res.render('tarea', tareaEditada);
-        })
-        .catch(err =>{
-            console.error(err);
-        });
+        Tarea.findByIdAndUpdate(req.params.id, newData, { new: true })
+            .then(tareaEditada => {
+                res.render('tarea', tareaEditada);
+            })
+            .catch(err => {
+                console.error(err);
+            });
     }
 
     static eliminar(req, res) {
-        Tarea.findByIdAndDelete(req.params.id).then(tareaEliminada=>{
+        Tarea.findByIdAndDelete(req.params.id).then(tareaEliminada => {
             res.render('tareaEliminada', tareaEliminada);
         })
-        .catch(err =>{
-            console.log(err);
-        })
+            .catch(err => {
+                console.log(err);
+            })
     }
 }
 

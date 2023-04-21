@@ -1,4 +1,5 @@
 const {Schema, model}= require('mongoose');
+
 const tareaSchema= new Schema({
     titulo: {type: String},
     descripcion: {type: String},
